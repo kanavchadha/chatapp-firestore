@@ -1,0 +1,83 @@
+.thread{
+    background-color: rgb(9, 66, 131);
+    flex: 0.68;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    position: relative;
+}
+
+.thread__header{
+    display: flex;
+    border-bottom: 1px solid rgba(190,190,190,0.3);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.thread__head__cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    color: white;
+}
+.threadName{
+    margin-left: 20px;
+}
+.threadName > span{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.threadName > span:hover{
+    color: rgb(31, 231, 231);
+}
+.threadName > small{
+   color: rgb(214, 211, 211);
+}
+.thread__messages{
+    flex: 1;
+    color: white;
+    overflow-y: auto;
+}
+.thread__input {
+    display: flex;
+    padding: 5px;
+    border-top: 1px solid rgba(190,190,190,0.2);
+}
+.thread__input form{
+    display: flex;
+    flex: 1;
+}
+.thread__input form input{
+    color: white;
+    width: 100%;
+    background-color: rgba(236, 236, 236, 0.1);
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    font-size: 1.05em;
+}
+.thread__input form input:focus{
+    outline: none;
+}
+.thread__input form button{
+    background-color: rgb(6, 70, 122);
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.thread__input form button:hover{
+    background-color: rgb(8, 89, 155);
+}
+
+::placeholder{
+    color: whitesmoke;
+}
+@media(max-width: 720px){
+    .thread{
+        flex: 1;
+    }
+}

@@ -1,0 +1,36 @@
+.sidebarThreads{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-bottom: 1px solid rgba(190,190,190,0.1);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebarThreads:hover{
+    background-color: rgba(2,150,199);
+}
+
+.sbThreads__details{
+    margin-left: 10px;
+    position: relative;
+    width: 100%;
+}
+.sbThreads__details div:nth-of-type(1){
+    font-size: 1.26rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.sbThreads__details div:nth-of-type(2){
+    font-weight: 100;
+    padding-top: 3px;
+    word-break: break-all;
+    color: white;
+}
+.sbThreads__details small{
+    position: absolute;
+    top: 8px;
+    font-size: 12px;
+    right: 0;
+}
